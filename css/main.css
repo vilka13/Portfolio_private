@@ -1,0 +1,127 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/**{*/
+/*    border: 1px solid red;*/
+/*}*/
+
+
+:root {
+    --black:#171718;
+    --black-border: #171718;
+    --white: #fff;
+    --green: #32CD32;
+
+    --dark-bg: var(--black);
+    --dark-border: var(--black-border);
+    --header-text: var(--white);
+    --accent: var(--green);
+}
+
+html, body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+
+/* navigacja */
+
+.nav {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--dark-border);
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+
+
+}
+
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* LOGO */
+
+.logo {
+  color: var(--header-text);
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.logo:hover {
+  background: linear-gradient(45deg, var(--accent), #006400);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s linear infinite; /* Длительность 4 секунды, вы можете изменить это значение по своему усмотрению */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+/* BUTTON LIST */
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.nav-list__link{
+    color: var(--header-text);
+}
+
+
+.nav-list__link--active{
+position: relative;
+}
+
+.nav-list__link--active::before{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--accent);
+}
+
+
+
