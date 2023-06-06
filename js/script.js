@@ -95,3 +95,8 @@ function calculate() {
 
     document.getElementById("totalSum").innerHTML = totalSum;
 }
+
+
+
+
+
