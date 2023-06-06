@@ -168,10 +168,12 @@ position: relative;
     font-size: 40px;
     font-weight: 700;
     line-height: 1.4;
+    color: var(--white);
 }
 .header__title strong {
     font-size: 60px;
     font-weight: 700;
+    color: var(--white);
 }
 .header__title em {
     font-style: normal;
@@ -182,6 +184,7 @@ position: relative;
     margin-bottom: 40px;
     font-size: 18px;
     line-height: 1.333;
+    color: var(--white);
 }
 .header__text p +p {
     margin-top: 1em;
