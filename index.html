@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slider.css">
+
     <script src="/js/script.js"></script>
 
 </head>
@@ -44,44 +46,51 @@
 <main class="section">
     <div class="container">
         <h2 class="title-1">Projects</h2>
-        <ul class="projects">
-            <li class="project">
-                <a href="./projects.html">
-                <img src="./img/projects/01.jpg" alt="Project img" class="project__img">
-                <h3 class="project__title">UX/UI Bank design</h3>
-                </a>
-            </li>
-            <li class="project">
-                <a href="./projects.html">
-                <img src="./img/projects/02.jpg" alt="Project img" class="project__img">
-                <h3 class="project__title">Mobile app design</h3>
+        <div class="projects-conteiner">
+            <span class="btn-slider left"><img src="img/icons/arrow-left.svg"></span>
+            <span class="btn-slider right"><img src="img/icons/arrow-right.svg"></span>
+            <ul class="projects">
+
+
+                <li class="project">
+                    <a href="https://www.behance.net/samlite1">
+                        <img src="./img/projects/01.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">UX/UI Bank design</h3>
                     </a>
-            </li>
-            <li class="project">
-                <a href="./projects.html">
-                <img src="./img/projects/03.jpg" alt="Project img" class="project__img">
-                <h3 class="project__title">Telegram bot</h3>
+                </li>
+                <li class="project">
+                    <a href="https://www.behance.net/samlite1">
+                        <img src="./img/projects/02.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Mobile app design</h3>
                     </a>
-            </li>
-            <li class="project">
-                <a href="./projects.html">
-                <img src="./img/projects/04.jpg" alt="Project img" class="project__img">
-                <h3 class="project__title">Wordpress</h3>
+                </li>
+                <li class="project">
+                    <a href="https://github.com/vilka13/telegram_bot">
+                        <img src="./img/projects/03.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Telegram bot</h3>
                     </a>
-            </li>
-            <li class="project">
-                <a href="./projects.html">
-                <img src="./img/projects/05.jpg" alt="" class="project__img">
-                <h3 class="project__title">Password generation for Python</h3>
+                </li>
+                <li class="project">
+                    <a href="https://drive.google.com/drive/folders/1H0MiX53jRqSDu45O7XH2Yt-4gl0aT60c?usp=sharing">
+                        <img src="./img/projects/04.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Wordpress</h3>
                     </a>
-            </li>
-            <li class="project">
-                <a href="./projects.html">
-                <img src="./img/projects/06.jpg" alt="Project img" class="project__img">
-                <h3 class="project__title">Restaurant menu C#</h3>
+                </li>
+                <li class="project">
+                    <a href="https://github.com/vilka13/Password_generation">
+                        <img src="./img/projects/05.jpg" alt="" class="project__img">
+                        <h3 class="project__title">Password generation for Python</h3>
                     </a>
-            </li>
-        </ul>
+                </li>
+                <li class="project">
+                    <a href="https://github.com/vilka13/Restaurant_Project_OOP">
+                        <img src="./img/projects/06.jpg" alt="Project img" class="project__img">
+                        <h3 class="project__title">Restaurant menu C#</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </main>
 
@@ -202,6 +211,6 @@
 </footer>
 
 
-
+<script src="js/slider.js"></script>
 </body>
 </html>

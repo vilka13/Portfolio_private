@@ -1,0 +1,38 @@
+.projects{
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+.project{
+    flex: none;
+    transition: 0.4s;
+    /* transform: translateX(calc(300% + 60px)); */
+    box-shadow: none;
+}
+.btn-slider{
+    position: absolute;
+    top: calc(50% - 35px);
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.btn-slider img{
+    height: 100%;
+}
+.btn-slider.left{
+    left:  -6%;
+}
+.btn-slider.right{
+    right:  -6%;
+}
+.projects-conteiner{
+    position: relative;
+}
+.project:nth-child(4) , .project:nth-child(5) , .project:nth-child(6){
+    min-height: 379px;
+}

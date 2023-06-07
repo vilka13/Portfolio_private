@@ -70,31 +70,31 @@ html, body {
 /* LOGO */
 
 .logo {
-  color: var(--header-text);
-  font-size: 24px;
-  font-family: 'Poppins', sans-serif;
-  position: relative;
+    color: var(--header-text);
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 .logo:hover {
-  background: linear-gradient(45deg, var(--accent), #006400);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: gradientAnimation 4s linear infinite; /* Длительность 4 секунды, вы можете изменить это значение по своему усмотрению */
+    background: linear-gradient(45deg, var(--accent), #006400);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 4s linear infinite; /* Длительность 4 секунды, вы можете изменить это значение по своему усмотрению */
 }
 
 @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -122,7 +122,7 @@ html, body {
 
 
 .nav-list__link--active{
-position: relative;
+    position: relative;
 }
 
 .nav-list__link--active::before{
@@ -316,29 +316,29 @@ position: relative;
 
 
 body {
-  background-color: #dedede;
+    background-color: #dedede;
     background-image: url("./../img/header-bg.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-  font-family: 'DM Sans', sans-serif;
-  text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
 }
 
 .calculator-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .table-kalkulator {
-  width: 1000px;
-  height: 340px;
-  margin: 50px auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    width: 1000px;
+    height: 340px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -354,54 +354,54 @@ body {
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .title-h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 .table th,
 .table td {
-  padding: 8px;
-  border: 1px solid #000;
+    padding: 8px;
+    border: 1px solid #000;
 }
 
 .form-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-check-input {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .input-group {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid green;
-  border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid green;
+    border-radius: 10px;
 }
 
 .input-group input {
-  flex: 1;
-  padding: 6px;
+    flex: 1;
+    padding: 6px;
 }
 
 .btn-primary {
-  background-color: var(--accent);
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -529,59 +529,10 @@ form textarea {
 }
 
 
-/* Project-details  */
-
-
-.project-details{
-    margin: 0 auto;
-    max-width: 865px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-}
 
 
 
-.project-details__cover{
-    max-width: 100%;
-    margin-bottom: 40px;
-    box-shadow: 0px 5px 35px rgba(0,0,0,0.25);
-    border-radius: 10px;
-}
-
-.project-details_desc{
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.3;
-
-}
-
-.btn-outline{
-    height: 48px;
-    padding: 12px 20px;
-    border-radius: 5px;
 
 
-    border: 1px solid var(--black);
-    color: var(--accent);
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-    transition: opacity 0.2s ease-in;
-
-}
-
-btn-outline:hover{
-    opacity: 08;
-}
-
-btn-outline:active{
-    position: relative;
-    top: 1px;
-}
 
 
