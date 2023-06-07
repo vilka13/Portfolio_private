@@ -102,7 +102,9 @@ html, body {
 /* BUTTON LIST */
 
 .nav-list{
+    flex-wrap: wrap;
     display: flex;
+    row-gap: 10px;
     align-items: center;
     column-gap: 40px;
     font-size: 16px;
@@ -580,6 +582,10 @@ btn-outline:active{
     position: relative;
     top: 1px;
 }
+
+/*  MOBILE */
+
+
 
 
 
