@@ -11,8 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $headers = "From: $email";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
-    } else {
+        header("Location: contacts.html");
+        exit(); else {
         echo "Message could not be sent.";
     }
 }
