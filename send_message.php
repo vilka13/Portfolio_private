@@ -12,9 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (mail($to, $subject, $body, $headers)) {
         header("Location: contacts.html");
-        exit(); else {
-        echo "Message could not be sent.";
-    }
+        exit();
 }
 ?>
-
