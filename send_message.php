@@ -1,17 +1,33 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $company = $_POST["company"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $to = "lukumer1997@gmail.com"; // Замените на вашу электронную почту
-    $subject = "New Message from Your Portfolio Website";
-    $body = "Name: $name\n\nCompany: $company\n\nEmail: $email\n\nMessage:\n$message";
+    // Адрес электронной почты, на который нужно отправить сообщение
+    $to = "your-email@example.com";
+
+    // Заголовок письма
+    $subject = "New Message from Website";
+
+    // Текст письма
+    $email_message = "Name: $name\n";
+    $email_message .= "Company: $company\n";
+    $email_message .= "Email: $email\n";
+    $email_message .= "Message: $message\n";
+
+    // Дополнительные заголовки
     $headers = "From: $email";
 
-    if (mail($to, $subject, $body, $headers)) {
+    // Отправка письма
+    if (mail($to, $subject, $email_message, $headers)) {
+        // Сообщение успешно отправлено
         header("Location: contacts.html");
         exit();
+    } else {
+        // Произошла ошибка при отправке сообщения
+        echo "Sorry, something went wrong.";
+    }
 }
 ?>
