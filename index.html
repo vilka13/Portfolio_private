@@ -6,7 +6,7 @@
     <title>SO freelancer</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/slider.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/script.js"></script>
     <link type="Image/x-icon" href="/img/logosite%2034.png" rel="icon">
 </head>
@@ -96,103 +96,98 @@
 </main>
 
 <h3 class="text-center-title-h3">Calculator</h3>
-
-  <table class="table-kalkulator">
-    <div>
-      <tr>
-        <div class="container-name-service">
-          <th scope="col"></th>
-         <th scope="col">Name of service</th>
-          <th scope="col">Hourly rate</th>
-          <th scope="col">Hours</th>
-          <th scope="col">TOTAL $</th>
-        </div>
-      </tr>
-    </div>
-    <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="CSharp">
-            <label class="form-check-label" for="CSharp">
-              Development in Python
-            </label>
-          </div>
-        </td>
-        <td id="CSharpPrice">12</td>
-        <td>
-          <div class="input-group">
-            <input id="CSharpHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-          </div>
-        </td>
-        <td id="CSharpSum">0</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="CPP">
-            <label class="form-check-label" for="CPP">
-              UX/UI design
-            </label>
-          </div>
-        </td>
-        <td id="CPPPrice">15</td>
-        <td>
-          <div class="input-group">
-            <input id="CPPHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-          </div>
-        </td>
-        <td id="CPPSum">0</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="HTML">
-            <label class="form-check-label" for="HTML">
-              HTML/CSS
-            </label>
-          </div>
-        </td>
-        <td id="HTMLPrice">11.5</td>
-        <td>
-          <div class="input-group">
-            <input id="HTMLHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-          </div>
-        </td>
-        <td id="HTMLSum">0</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="JavaScript">
-            <label class="form-check-label" for="JavaScript">
-              C# development
-            </label>
-          </div>
-        </td>
-        <td id="JavaScriptPrice">17</td>
-        <td>
-          <div class="input-group">
-            <input id="JavaScriptHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-          </div>
-        </td>
-        <td id="JavaScriptSum">0</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td></td>
-        <td>
-          <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
-        </td>
-        <td>Final total $ :</td>
-        <td id="totalSum">0</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="calculator-wrapper">
+    <table class="table-kalkulator">
+        <tr>
+            <th></th>
+            <th>Name of service</th>
+            <th>Hourly rate</th>
+            <th>Hours</th>
+            <th>TOTAL $</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="CSharp">
+                    <label class="form-check-label" for="CSharp">
+                        Development in Python
+                    </label>
+                </div>
+            </td>
+            <td id="CSharpPrice">12</td>
+            <td>
+                <div class="input-group">
+                    <input id="CSharpHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+            </td>
+            <td id="CSharpSum">0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="CPP">
+                    <label class="form-check-label" for="CPP">
+                        UX/UI design
+                    </label>
+                </div>
+            </td>
+            <td id="CPPPrice">15</td>
+            <td>
+                <div class="input-group">
+                    <input id="CPPHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+            </td>
+            <td id="CPPSum">0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="HTML">
+                    <label class="form-check-label" for="HTML">
+                        HTML/CSS
+                    </label>
+                </div>
+            </td>
+            <td id="HTMLPrice">11.5</td>
+            <td>
+                <div class="input-group">
+                    <input id="HTMLHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+            </td>
+            <td id="HTMLSum">0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="JavaScript">
+                    <label class="form-check-label" for="JavaScript">
+                        C# development
+                    </label>
+                </div>
+            </td>
+            <td id="JavaScriptPrice">17</td>
+            <td>
+                <div class="input-group">
+                    <input id="JavaScriptHours" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+            </td>
+            <td id="JavaScriptSum">0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
+            </td>
+            <td>Final total $ :</td>
+            <td id="totalSum">0</td>
+        </tr>
+    </table>
+</div>
 
 <footer class="footer">
     <div class="container">
