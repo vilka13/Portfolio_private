@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // Адрес электронной почты, на который нужно отправить сообщение
-    $to = "vilka13sofreelancer.zzz.com.ua";
+    $to = "123@mail.com";
 
     // Заголовок письма
     $subject = "New Message from Website";
