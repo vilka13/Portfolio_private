@@ -42,8 +42,10 @@
     --project-card-text: var(--white);
     --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
 }
-
-
+/* Цвет темного режима  */
+.dark{
+    background: #293238;
+}
 
 html, body {
     display: flex;
@@ -57,6 +59,10 @@ html, body {
     /* Light mode */
     background-color: var(--page-bg);
     color: var(--text-color);
+    
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
 }
 
 
@@ -103,7 +109,7 @@ html, body {
     left: 0;
     width: 100%;
     z-index: 9999;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid var(--dark-border);
     background-color: var(--dark-bg);
     color: var(--header-text);
@@ -266,14 +272,14 @@ html, body {
 
 .header{
     padding: 40px 0;
-    min-height: 700px;
+    min-height: 800px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     background-color: var(--gray-bg);
-    background-image: url("./../img/header-bg.png");
+    /* background-image: url("./../img/header-bg.png"); */
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -352,7 +358,7 @@ html, body {
 
 .section{
     padding: 70px 0;
-    background-color: var(--white);
+    background-color: inherit;
 }
 
 
@@ -381,11 +387,12 @@ html, body {
 
 .project{
     max-width: 370px;
-    background-color: #e5e5e5;
+    background-color: #ffffff42;
     border-radius: 10px;
     box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25)
 
 }
+
 
 .project__img{
     border-radius: 10px;
@@ -640,7 +647,10 @@ input:focus {
     color: #464646;
 }
 
-
+.row-wrapper{
+    width: 100%;
+    height: auto;
+}
 @media screen and (min-width: 768px) {
     .wrapper {
         width: 60%;
@@ -815,4 +825,93 @@ btn-outline:active{
 
 
 
+.text-center-title-h3{
+    margin: 0;
+}
+.wrapper {
+    background-color: #ffffffa3;
+}
+.text-center-title-h3 , .calculator-wrapper , .table-kalkulator , .row-wrapper{
+    background-color: inherit;
+}
 
+
+
+/* main anim */
+
+.anim-row{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-top: 2%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: #293238;
+}
+.animation-wrapper{
+    z-index: 1;
+    width: 42%;
+}
+.header{
+    position: relative;
+}
+.header__wrapper{
+    z-index: 3;
+}
+.animation-wrapper {
+height: 700px;
+padding-bottom: 50%;
+position: relative;
+}
+
+.sphere-animation {
+position: absolute;
+top: 45%;
+left: 50%;
+width: 600px;
+height: 600px;
+margin: -290px 0 0 -290px;
+}
+
+.sphere path {
+fill: url(#sphereGradient);
+stroke-width: 1px;
+stroke: rgba(80,80,80,.35);
+backface-visibility: hidden;
+}
+.sphere-animation{
+transform: scale(1) !important;
+}
+
+
+
+@media (min-width: 500px) {
+.sphere path {
+    stroke-width: .4px;
+}
+}
+@media (min-width: 2000px) {
+.header{
+    min-height: 950px;
+}
+.sphere-animation{
+    top: 45%;
+    transform: scale(1.25) !important;
+    }
+
+}
+@media (min-width: 2500px) {
+.header{
+    min-height: 1000px;
+}
+.sphere-animation{
+    top: 43%;
+    transform: scale(1.38) !important;
+    }
+    
+}
+ 

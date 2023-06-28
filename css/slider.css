@@ -36,3 +36,6 @@
 .project:nth-child(4) , .project:nth-child(5) , .project:nth-child(6){
     min-height: 379px;
 }
+.project{
+    height: 400px;
+}
