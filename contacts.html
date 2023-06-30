@@ -52,10 +52,12 @@
 
 </main>
 
+
+
 <div class="row-wrapper">
     <div class="wrapper">
         <h1 class="title-2">Send me a message</h1>
-        <form action="send_message.php" method="post">
+        <form action="send_message.php" method="post" onsubmit="showPopup(event)">
             <input type="text" name="name" placeholder="Your name">
             <input type="text" name="company" placeholder="Name of company">
             <input type="email" name="email" placeholder="Email">
@@ -64,6 +66,28 @@
         </form>
     </div>
 </div>
+
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <h2>Message sent</h2>
+    </div>
+</div>
+
+<script>
+    function showPopup(event) {
+        event.preventDefault();
+        var popup = document.getElementById("popup");
+        popup.style.display = "flex";
+        setTimeout(function() {
+            hidePopup();
+        }, 1000);
+    }
+
+    function hidePopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+    }
+</script>
 
 
 
