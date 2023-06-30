@@ -31,7 +31,7 @@
 
 <main class="section">
     <div class="container">
-            <h1 class="title-1">Contacts</h1>
+        <h1 class="title-1">Contacts</h1>
 
         <ul class="content-list">
             <li class="content-list__item">
@@ -44,7 +44,7 @@
             </li>
             <li class="content-list__item">
                 <h2 class="title-2">Email</h2>
-                 <p><a href="mailto:lukumer1997@gmail.com">lukumer1997@gmail.com</a></p>
+                <p><a href="mailto:lukumer1997@gmail.com">lukumer1997@gmail.com</a></p>
             </li>
         </ul>
 
@@ -57,81 +57,15 @@
 <div class="row-wrapper">
     <div class="wrapper">
         <h1 class="title-2">Send me a message</h1>
-        <form action="send_message.php" method="post" onsubmit="sendMessage(event)">
-            <input type="text" name="name" id="name" placeholder="Your name">
-            <input type="text" name="company" id="company" placeholder="Name of company">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <textarea name="message" id="message" placeholder="Message..."></textarea>
-            <button type="submit" id="submitButton">Send Message</button>
+        <form action="send_message.php" method="post">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="text" name="company" placeholder="Name of company">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message..."></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </div>
 </div>
-
-<div id="popup" class="popup" style="display: none;">
-    <div class="popup-content">
-        <h2>Message sent</h2>
-    </div>
-</div>
-
-<script>
-    function sendMessage(event) {
-        event.preventDefault();
-        var form = event.target;
-        var nameInput = form.elements["name"];
-        var companyInput = form.elements["company"];
-        var emailInput = form.elements["email"];
-        var messageInput = form.elements["message"];
-        var submitButton = form.elements["submitButton"];
-
-        // Отключаем кнопку отправки, чтобы избежать повторных нажатий
-        submitButton.disabled = true;
-
-        var xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action, true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    // Сообщение успешно отправлено
-                    resetForm();
-                    showPopup();
-                } else {
-                    // Произошла ошибка при отправке сообщения
-                    console.log("Sorry, something went wrong.");
-                    submitButton.disabled = false;
-                }
-            }
-        };
-
-        // Формируем данные для отправки
-        var formData = new FormData();
-        formData.append("name", nameInput.value);
-        formData.append("company", companyInput.value);
-        formData.append("email", emailInput.value);
-        formData.append("message", messageInput.value);
-
-        xhr.send(formData);
-    }
-
-    function resetForm() {
-        var form = document.querySelector("form");
-        form.reset();
-    }
-
-    function showPopup() {
-        var popup = document.getElementById("popup");
-        popup.style.display = "flex";
-        setTimeout(function () {
-            hidePopup();
-        }, 1000);
-    }
-
-    function hidePopup() {
-        var popup = document.getElementById("popup");
-        popup.style.display = "none";
-    }
-</script>
-
 
 
 
@@ -146,9 +80,9 @@
                 <li class="social__item"><a href="https://www.linkedin.com/in/staols13/"><img src="./img/icons/linkedIn.svg" alt="link"></a></li>
 
             </ul>
-                <div class="copyright">
-                    <p>All rights reserved © 2023</p>
-                </div>
+            <div class="copyright">
+                <p>All rights reserved © 2023</p>
+            </div>
         </div>
     </div>
 </footer>
